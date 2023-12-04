@@ -1,7 +1,7 @@
 # This My custom OMP prompt
 
 ## Setup
-you will need to have install `Oh My Posh` in order to use this custom prompt and as well as install `Nerd Font` installed
+You will need to have install `Oh My Posh` in order to use this custom prompt and as well as install `Nerd Font` installed
 
 ## Get Started
 ### Oh My Posh Setup
