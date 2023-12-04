@@ -1,0 +1,75 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+      {
+       "alignment": "left",
+        "segments": [
+          {
+            "background": "#242424",
+            "foreground": "#fc8897",
+            "powerline_symbol": "\ue0c4",
+            "properties": {
+              "time_format": "15:04:05"
+            },
+            "style": "powerline",
+            "template": "{{ .CurrentDate | date .Format }} ",
+            "type": "time"
+          },
+          {
+            "foreground": "#45F1C2",
+            "style": "plain",
+            "template": " \udb80\udd5f  {{ .UserName }}",
+            "type": "session"
+          },
+          {
+            "foreground": "#40ccd1",
+            "style": "plain",
+            "template": " | \ue73a  Running In",
+            "type": "session"
+          },
+          {
+            "foreground": "#159cb4",
+            "properties": {
+              "folder_separator_icon": "/",
+              "style": "full"
+            },
+            "style": "plain",
+            "template": " \uf07b {{ .Path }} ",
+            "type": "path"
+          },
+          {
+            "foreground": "#19cbd8",
+            "powerline_symbol": "\ue0b0",
+            "properties": {
+              "fetch_stash_count": true,
+              "fetch_upstream_icon": true
+            },
+            "style": "plain",
+            "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+            "type": "git"
+          }
+        ],
+        "type": "prompt"
+      },
+      {
+        "alignment": "left",
+        "newline": true,
+        "segments": [
+          {
+            "foreground": "#cd5e42",
+            "style": "plain",
+            "template": "~",
+            "type": "text"
+          },
+          {
+            "foreground": "#CD4277",
+            "style": "plain",
+            "template": "$ ",
+            "type": "text"
+          }
+        ],
+        "type": "prompt"
+      }
+    ],
+    "version": 2
+  }
